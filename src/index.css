@@ -1,0 +1,23 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,html, body {
+    padding:0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../src/component/assets/bg.png);
+    background-size: cover;
+}
+
+font-face {
+    font-family: porsche;
+    src: url(./assets/Porsche\ Regular.ttf);
+}
+
+.porsche {
+    font-family: porsche;
+}
