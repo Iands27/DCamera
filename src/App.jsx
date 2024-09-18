@@ -1,16 +1,32 @@
-import Article from './component/article/article'
-import Footer from './component/footer/footer'
-import Navbar from './component/Navbar/Navbar'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+// import Navbar from "./components/navbar";
+// import Footer from "./components/footer";
+
+import PageHome from "./pages/PageHome";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage"
 
 function App() {
-
   return (
-    <>
-    <Navbar></Navbar>
-    <Article></Article>
-    <Footer></Footer>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<PageHome/>} />
+        <Route path="/LoginPage" element={<LoginPage/>} />
+        <Route path="/RegisterPage" element={<RegisterPage/>} />
+      </Routes>
+    </Router>
+    // <div>
+      
+    //   {/* Navbar */}
+    //   <Navbar/>
+
+    //   {/* Content */}
+    //     <HomePage/>
+
+    //   {/* Footer */}
+    //   <Footer/>
+    // </div>
+  );
 }
 
-export default App
+export default App;
