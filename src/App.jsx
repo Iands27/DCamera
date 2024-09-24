@@ -3,29 +3,24 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 // import Footer from "./components/footer";
 
 import PageHome from "./pages/PageHome";
-import LoginPage from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage"
+import PageMenu from "./pages/PageMenu";
+import PageGallery from "./pages/PageGallery";
+// import LoginPage from "./pages/LoginPage";
+// import RegisterPage from "./pages/RegisterPage"
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<PageHome/>} />
-        <Route path="/LoginPage" element={<LoginPage/>} />
-        <Route path="/RegisterPage" element={<RegisterPage/>} />
+        <Route path="/PageMenu" element={<PageMenu/>} />
+        <Route path="/PageGallery" element={<PageGallery/>} />
+        {/* <Route path="/LoginPage" element={<LoginPage/>} />
+        <Route path="/RegisterPage" element={<RegisterPage/>} /> */}
       </Routes>
     </Router>
-    // <div>
-      
-    //   {/* Navbar */}
-    //   <Navbar/>
 
-    //   {/* Content */}
-    //     <HomePage/>
-
-    //   {/* Footer */}
-    //   <Footer/>
-    // </div>
+    
   );
 }
 

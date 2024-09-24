@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import HomePage from "../components/HomePage";
 import Footer from "../components/footer";
 
@@ -11,7 +11,7 @@ function PageHome() {
       <HomePage/>
       <Footer/>
     </div>
-  )
-}
+  );
+};
 
 export default PageHome; 

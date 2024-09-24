@@ -6,8 +6,8 @@ const Footer = () => {
           &copy; Copyright by <span className="font-bold">Ian/Dastin</span>  
         </p>        
         <div className="social-footer flex items-center gap-7">
-          <i className="ri-facebook-circle-fill text-2xl"><a href=""></a></i>
-          <i className="ri-instagram-fill text-2xl"></i>
+          <a href="https://www.facebook.com/share/4yJ1ZApFrCyTfBKC/?mibextid=qi2Omg"><i className="ri-facebook-circle-fill text-2xl"></i></a>
+          <a href="https://www.instagram.com/dastindgg_?igsh=MWRnOTNqbDNuN2l0eg=="><i className="ri-instagram-fill text-2xl"></i></a>
         </div>
       </div>
     </div>
